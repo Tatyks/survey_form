@@ -15,29 +15,178 @@
     <p id="description" class="description text-center">Please fill out this form with the required information</p>
     </header>
     <form id="survey-form">
-  <div class="form-control">
+  <div class="form-group">
     <label for="name" id="name-label">
       Name
     </label>
-    <input id="name" type="text" required />
+    <input id="name"
+         type="text"
+         class="form-control"
+         placeholder="Enter your name"
+         required />
   </div>
-  <div class="form-control">
+  <div class="form-group">
     <label for="email" id="label-email">
       Email
     </label>
-    <input id="email" name="email" type="email" class="form-control" placeholder="Enter your email" required />
+    <input id="email" 
+         name="email" 
+         type="email" 
+         class="form-control" 
+         placeholder="Enter your email" 
+         required />
   </div>
-  <div class="form-control">
-    <label for="age">
-      Age (optional)
+  <div class="form-group">
+    <label for="number" id="number-label">
+      Age
     </label>
-    <input id="age" name="age" type="number" min="10" max="99" class="form-control" placeholder="Age" required />
+    <input id="number" 
+           name="age" 
+           type="number" 
+           min="10" 
+           max="99" 
+           class="form-control" 
+           placeholder="Age"
+           required />
   </div>
-  <div class="form-control">
-    <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+  <div class="form-group">
+    <p>Which statement best describes your current condition?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+      <option disabled selected value>What is about you?</option>
+      <option value="beginner">I am a beginner. I want to start my IT carreer.</option>
+      <option value="advansed student">I am an IT spesialist. I want to change my career inside the field. </option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>Which statement best describes your current condition?</p>
+    <select id="dropdown" name="role" class="form-control" required>
+      <option disabled selected value>What is about you?</option>
+      <option value="beginner">I am a beginner. I want to start my IT carreer.</option>
+      <option value="advansed student">I am an IT spesialist. I want to change my career inside the field. </option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>What is your education?</p>
+    <label>
+      <input
+        name="user-recommend"
+        value="high school diploma"
+        type="radio"
+        class="input-radio"
+        checked
+      />High school diploma</label
+    >
+    <label>
+      <input
+        name="user-recommend"
+        value="associate degree"
+        type="radio"
+        class="input-radio"
+      />Associate degree</label
+    >
+       <label>
+      <input
+        name="user-recommend"
+        value="bachelor degree"
+        type="radio"
+        class="input-radio"
+      />Bachelor degree</label
+    >
+
+    <label>
+      <input
+        name="user-recommend"
+        value="other"
+        type="radio"
+        class="input-radio"
+      />Other</label
+    >
+  </div>
+  <div class="form-group">
+    <p>
+      I want to become ...
+      <span class="clue">(Select only one)</span>
+    </p>
+
+    <label
+      ><input
+        name="prefer"
+        value="front-end-developer"
+        type="checkbox"
+        class="input-checkbox"
+      />Front-end Developer</label
+    >
+    <label>
+      <input
+        name="prefer"
+        value="back-end-developer"
+        type="checkbox"
+        class="input-checkbox"
+      />Back-end Developer</label
+    >
+    <label
+      ><input
+        name="prefer"
+        value="full-stack-developer"
+        type="checkbox"
+        class="input-checkbox"
+      />Full-stack Developer</label
+    >
+    <label
+      ><input
+        name="prefer"
+        value="data-analyst"
+        type="checkbox"
+        class="input-checkbox"
+      />Data Analyst</label
+    >
+    <label
+      ><input
+        name="prefer"
+        value="buisness-analyst"
+        type="checkbox"
+        class="input-checkbox"
+      />Buisness Analyst</label
+    >
+    <label
+      ><input
+        name="prefer"
+        value="software-tester"
+        type="checkbox"
+        class="input-checkbox"
+      />Software Tester</label
+    >
+    <label
+      ><input
+        name="prefer"
+        value="automation-engineer"
+        type="checkbox"
+        class="input-checkbox"
+      />Automation Engineer</label
+    >
+    <label
+      ><input
+        name="prefer"
+        value="web-designer"
+        type="checkbox"
+        class="input-checkbox"
+      />Web Designer</label
+    >
+    <label
+      ><input
+        name="prefer"
+        value="other"
+        type="checkbox"
+        class="input-checkbox"
+      />Other</label
+    >
+    
   </div>
 
   </form>
+  </div>
 </body>
 
 </html>
