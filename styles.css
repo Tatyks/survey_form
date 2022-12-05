@@ -1,0 +1,29 @@
+h1 {
+    margin: 1em auto;
+    text-align: center;  
+}
+body {
+    background-color: #05c46b;
+            font-family: Verdana;
+            text-align: center;
+    background-image: url(https://www.internetsociety.org/wp-content/uploads/2022/04/Internet-of-Things-IoT-1280px.jpg);
+}
+form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+  }
